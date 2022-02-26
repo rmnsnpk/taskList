@@ -1,3 +1,6 @@
+import './styles/index.sass';
+
+
 function add() {
     let item = document.createElement('div');
     item.className = "task";
@@ -6,7 +9,7 @@ function add() {
     item.onclick = lineThrough;
     form.after(item);
     let delBtn = document.createElement('img');
-    delBtn.src = '/icons/can.png';
+    delBtn.src = './images/can.png';
     delBtn.className = 'can';
     delBtn.onclick = del;
     item.append(delBtn);
